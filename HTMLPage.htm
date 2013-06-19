@@ -68,7 +68,7 @@
             FB.api('/me', function (response) {
                 console.log('Good to see you, ' + response.name + '.');
                 $("#lbl_Welcome").text("Welcome " + response.name + "!!");
-                alert(("Welcome " + response.name + "!!"););
+                alert("Welcome " + response.name + "!!");
                 window.location = "https://www.google.co.in/";
             });
         }
