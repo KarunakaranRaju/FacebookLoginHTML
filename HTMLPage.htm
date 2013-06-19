@@ -15,7 +15,7 @@
         window.fbAsyncInit = function () {
             FB.init({
                 appId: '499649900103650', // App ID
-                channelUrl: 'http://localhost:17829/FacebookLogin/HTMLPage2.htm', // Channel File
+                channelUrl: 'http://htmlpreview.github.io/?https://github.com/KarunakaranRaju/FacebookLoginHTML/blob/master/HTMLPage2.htm', // Channel File
                 status: true, // check login status
                 cookie: true, // enable cookies to allow the server to access the session
                 xfbml: true  // parse XFBML
@@ -68,6 +68,8 @@
             FB.api('/me', function (response) {
                 console.log('Good to see you, ' + response.name + '.');
                 $("#lbl_Welcome").text("Welcome " + response.name + "!!");
+                alert(("Welcome " + response.name + "!!"););
+                window.location = "https://www.google.co.in/";
             });
         }
     </script>
